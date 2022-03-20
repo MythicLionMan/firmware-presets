@@ -92,4 +92,25 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #set pid_process_denom = 2
 #set tlm_halfduplex = OFF
 
+#$ OPTION BEGIN (UNCHECKED): Setup OSD
+#$ INCLUDE: presets/4.3/osd/MythicLionMan.txt
+#$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): Setup Rates
+#$ INCLUDE: presets/4.3/rates/MythicLionMan.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Setup Modes
+#$ INCLUDE: presets/4.3/modes/MythicLionMan.txt
+#$ OPTION END
+
+# NOTE This section is disabled because I'm not sure how to pass options to the tune includes
+# OPTION_GROUP BEGIN: Tune
+# OPTION BEGIN (UNCHECKED): None
+# OPTION END
+# OPTION BEGIN (UNCHECKED): Supafly
+# OPTION BEGIN (CHECKED): RPM filtering
+# OPTION BEGIN (UNCHECKED): 4s Lipo with No HD Cam (2400-2700kv motors)
+# INCLUDE: presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt
+# OPTION END
+# OPTION_GROUP END
