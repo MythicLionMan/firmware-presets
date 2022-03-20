@@ -45,15 +45,15 @@ set min_throttle = 1070
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: Radio Protocol
-#$ OPTION BEGIN (CHECKED): None
+#$ OPTION BEGIN (UNCHECKED): None
 #$ OPTION END
-#$ OPTION BEGIN (CHECKED): FrSky SBUS
+#$ OPTION BEGIN (UNCHECKED): FrSky SBUS
     set serialrx_provider = SBUS
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): Crossfire
     set serialrx_provider = CRSF
 #$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): Crossfire + DJI LQ
+#$ OPTION BEGIN (CHECKED): Crossfire + DJI LQ
     set serialrx_provider = CRSF
 
     # Sets up CrSf RSSI for DJI Goggles by reading RSSI from a channel. This requires
