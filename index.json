@@ -874,8 +874,8 @@
     },
     {
       "fullPath": "presets/4.3/other/basic_setup.txt",
-      "hash": "0664cfcf7d6874d439b7c0f32489a566fc7c8e54f9a1fde2380885378709e380",
-      "title": "Reset GPS settings",
+      "hash": "87181b9e59fdfc69b42ed9db9b4554cc86d0436fd6ed7073055c1eabf6cf3a5a",
+      "title": "Standard Configuration",
       "firmware_version": [
         "4.3"
       ],
