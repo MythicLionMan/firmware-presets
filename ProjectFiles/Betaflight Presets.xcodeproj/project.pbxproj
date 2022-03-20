@@ -1,0 +1,83 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXFileReference section */
+		F07614EE27E697C5008477BC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F07614EF27E697C5008477BC /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		F07614F027E697C5008477BC /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
+		F07614F127E697C5008477BC /* indexer */ = {isa = PBXFileReference; lastKnownFileType = folder; name = indexer; path = ../indexer; sourceTree = "<group>"; };
+		F07614F227E697C5008477BC /* misc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = misc; path = ../misc; sourceTree = "<group>"; };
+		F07614F327E697C5008477BC /* presets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = presets; path = ../presets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		F0230AAE27E6517C00F4BEBC = {
+			isa = PBXGroup;
+			children = (
+				F07614EF27E697C5008477BC /* CODE_OF_CONDUCT.md */,
+				F07614F027E697C5008477BC /* CONTRIBUTING.md */,
+				F07614F127E697C5008477BC /* indexer */,
+				F07614F227E697C5008477BC /* misc */,
+				F07614F327E697C5008477BC /* presets */,
+				F07614EE27E697C5008477BC /* README.md */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		F0230AAF27E6517C00F4BEBC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+			};
+			buildConfigurationList = F0230AB227E6517C00F4BEBC /* Build configuration list for PBXProject "Betaflight Presets" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0230AAE27E6517C00F4BEBC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		F0230AB327E6517C00F4BEBC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		F0230AB427E6517C00F4BEBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0230AB227E6517C00F4BEBC /* Build configuration list for PBXProject "Betaflight Presets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0230AB327E6517C00F4BEBC /* Debug */,
+				F0230AB427E6517C00F4BEBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0230AAF27E6517C00F4BEBC /* Project object */;
+}

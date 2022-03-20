@@ -31,6 +31,10 @@ mcu.mak
 mcu.mak.old
 stm32.mak
 
+# artefacts for XCode
+xcuserdata
+xcuserdata/*
+
 # eclipse launch configurations
 /support/eclipse
 
