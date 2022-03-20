@@ -49,7 +49,7 @@ set min_throttle = 1070
 #$ OPTION END
 #$ OPTION BEGIN (CHECKED): FrSky SBUS
     set serialrx_provider = SBUS
-#$
+#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): Crossfire
     set serialrx_provider = CRSF
 #$ OPTION END
