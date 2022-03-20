@@ -1,0 +1,31 @@
+#$ TITLE: Default 4.3 Modes and Adjustment settings
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: MODES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal, mode, modes, adjustments, aux, switch
+#$ AUTHOR: MythicLionMan
+#$ DESCRIPTION: These are my personal modes setup. I put them here for my own use. They really only make sense with my OpenTX setup.
+#$ DESCRIPTION: Arming is on a 3 position switch with AirMode as an option (third position). Two switch arming requires that a momentary
+#$ DESCRIPTION: switch is pulled in order to arm.
+#$ DESCRIPTION: The rateprofile can be adjusted with a three position switch.
+#$ DESCRIPTION: One three way switch will toggle between turtle mode and GPS rescue when 'panic' is toggled.
+#$ DESCRIPTION: The panic switch will either switch to Horizon mode or engage GPS rescue.
+#$ DESCRIPTION: The mode switch will toggle between Acro, Horizon and something else I can't remember :-)
+
+# aux
+aux 0 0 1 1300 2100 0 0
+aux 1 1 0 1700 2100 0 0
+aux 2 2 0 1300 1700 0 0
+aux 3 46 2 1250 1400 0 0
+aux 4 13 2 900 1425 0 0
+aux 5 28 1 1700 2100 0 0
+aux 6 35 2 1400 1600 0 0
+aux 7 36 4 1450 2100 0 0
+
+# Additional modes that were only enabled for Inky
+aux 8 40 5 1550 2100 0 0
+aux 9 40 5 900 1425 0 0
+
+# adjrange
+adjrange 0 0 3 900 2100 12 3 0 0
+

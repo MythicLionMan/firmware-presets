@@ -1,0 +1,55 @@
+#$ TITLE: MythicLionMan rates
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: RATES
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal, freestyle
+#$ AUTHOR: MythicLionMan
+#$ DESCRIPTION: Three sets of Freestyle rates on different rateprofiles.
+#$ INCLUDE: presets/4.3/rates/defaults.txt
+
+# I grabbed these rates from my Betaflight dumps for all three of my quads. They were all the same. Evenutally I'd like
+# to convert these to Actual rates
+
+rateprofile 0
+
+# rateprofile 0
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 138
+set pitch_rc_rate = 138
+set yaw_rc_rate = 138
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 0
+set pitch_srate = 0
+set yaw_srate = 0
+
+rateprofile 1
+
+# rateprofile 1
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 108
+set pitch_rc_rate = 108
+set yaw_rc_rate = 121
+set roll_expo = 10
+set pitch_expo = 10
+set roll_srate = 78
+set pitch_srate = 78
+set yaw_srate = 60
+
+rateprofile 2
+
+# rateprofile 2
+set rates_type = BETAFLIGHT
+set roll_rc_rate = 126
+set pitch_rc_rate = 126
+set yaw_rc_rate = 114
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set roll_srate = 77
+set pitch_srate = 77
+set yaw_srate = 77
+
+# restore original rateprofile selection
+rateprofile 1
