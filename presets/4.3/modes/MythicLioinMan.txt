@@ -5,12 +5,13 @@
 #$ KEYWORDS: personal, mode, modes, adjustments, aux, switch
 #$ AUTHOR: MythicLionMan
 #$ DESCRIPTION: These are my personal modes setup. I put them here for my own use. They really only make sense with my OpenTX setup.
-#$ DESCRIPTION: Arming is on a 3 position switch with AirMode as an option (third position). Two switch arming requires that a momentary
-#$ DESCRIPTION: switch is pulled in order to arm.
-#$ DESCRIPTION: The rateprofile can be adjusted with a three position switch.
-#$ DESCRIPTION: One three way switch will toggle between turtle mode and GPS rescue when 'panic' is toggled.
+#$ DESCRIPTION: Arming is Aux2. AirMode is selected in the third position, disabled in the second. Prearm requires that Aux5
+#$ DESCRIPTION: is pulled momentarily.
+#$ DESCRIPTION: Rateprofiles 0, 1 & 2 can be selected with Aux4
+#$ DESCRIPTION: Turtle mode is engaged with Aux3.
 #$ DESCRIPTION: The panic switch will either switch to Horizon mode or engage GPS rescue.
-#$ DESCRIPTION: The mode switch will toggle between Acro, Horizon and something else I can't remember :-)
+#$ DESCRIPTION: Flight mode is set with Aux1. A three position switch will toggle between Acro, Horizon and Angle.
+#$ DESCRIPTION: VTX Camera 'real pit' is bound to Aux6
 
 # aux
 aux 0 0 1 1300 2100 0 0

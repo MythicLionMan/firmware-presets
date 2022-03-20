@@ -11,8 +11,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: OSD Elements Include:
 #$ DESCRIPTION: -----------
-#$ DESCRIPTION: TODO Update this, it is not reflective of what's in my setup.
-#$ DESCRIPTION: Vbat, Amps, mAh drawn, Armed Time, Time Remaining, VTX Channel, VTX Power, Uplink Power, RSSI, etc...
+#$ DESCRIPTION: Vbat, mAh drawn, Armed Time, RSSI
+#$ DESCRIPTION: Craft Name, Disarmed, Flight Mode, Warnings
+#$ DESCRIPTION: GPS Sats, GPS Speed, Altitude, Home Direction, Home Distance
 #$ INCLUDE: presets/4.3/osd/defaults.txt
 
 # This is a synthesis of my OSD settings from old Betaflight CLI dumps. I've merged the values from the
