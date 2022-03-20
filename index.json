@@ -752,8 +752,8 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/modes/MythicLioinMan.txt",
-      "hash": "b2483298d351921ed99c19b4999c90c9a9c9e6d9e33e7315b8c8bb7600f98ee9",
+      "fullPath": "presets/4.3/modes/MythicLionMan.txt",
+      "hash": "de5d25c3737cff17b81e8eadd5cf010a91c8da750bc36f85a6e40b4fc9d8cbf6",
       "title": "Default 4.3 Modes and Adjustment settings",
       "firmware_version": [
         "4.3"
@@ -794,7 +794,7 @@
     },
     {
       "fullPath": "presets/4.3/osd/MythicLionMan.txt",
-      "hash": "4252d7a40d9b2817456930b82f070b7c15ecde8562028a4e052ff0e7ad1081a7",
+      "hash": "ba058e956e1e7756b1c2bf2d182c8fee42ba08fc803e890c94ace2b92b435c11",
       "title": "MythicLionMan OSD",
       "firmware_version": [
         "4.3"
@@ -874,7 +874,7 @@
     },
     {
       "fullPath": "presets/4.3/other/basic_setup.txt",
-      "hash": "87181b9e59fdfc69b42ed9db9b4554cc86d0436fd6ed7073055c1eabf6cf3a5a",
+      "hash": "e3a935100c9f1d8d6ced8e3a6c5d04bd29e3ad7bb8a59f9d6c8dd576618d9f80",
       "title": "Standard Configuration",
       "firmware_version": [
         "4.3"
