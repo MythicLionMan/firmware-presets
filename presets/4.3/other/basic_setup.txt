@@ -4,8 +4,8 @@
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: personal, GPS
 #$ AUTHOR: MythicLionMan
-#$ DESCRIPTION: This is my 'standard' quad setup that I have on pretty much all of my rigs. All changes are optional, in nothing is selected nothing will happen.
-#$ DESCRIPTION: Failsafe - configures failsafe (TODO I can't remember how its configured)
+#$ DESCRIPTION: This is my 'standard' quad setup that I have on pretty much all of my rigs. All changes are optional, if nothing is selected nothing will happen.
+#$ DESCRIPTION: Failsafe - Stage 2 failsafe is set to Drop. GPS rescue must be enabled via OSD.
 #$ DESCRIPTION: Radio Setup - Sets the min_check, max_check and min_throttle values to match the gimbals of my radio.
 #$ DESCRIPTION: Radio Protocol - Configures the radio protocol, and optionally LQ emulation for CrSf.
 #$ DESCRIPTION: Blackbox Tuning - Increases blackbox_p_ratio for improved resolution tuning when using PIDToolbox
@@ -13,27 +13,21 @@
 #$ DESCRIPTION: GPS - Configures the GPS. RTH distance is set to 50m (the minimum) and sanity checks are disabled when possible. Arming without a fix is set to true.
 #$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming.
 
-#$ INCLUDE: presets/4.3/other/reset_gps.txt
-
 # I grabbed this setup from my CLI dumps of the backups of Inky, Blinky and Clyde. I've tried to standardize to just the stuff I custom configure on all builds.
 
 #$ OPTION BEGIN (CHECKED): Failsafe
-# rxfail
+# Hold the throttle in stage 1 failsafe
 rxfail 3 h
-# (Only on Clyde)
-rxfail 11 s 1000
 #$ OPTION END
 
 
 #$ OPTION BEGIN (CHECKED): Standard Features
 # I have airmode on a switch, so I want it disabled by default
 feature -AIRMODE
-feature GPS
 feature TELEMETRY
 beeper -ON_USB
 set small_angle = 180
 #$ OPTION END
-
 
 # Options specific to my radio
 #$ OPTION BEGIN (CHECKED): Radio Setup
@@ -67,6 +61,11 @@ set min_throttle = 1070
     # LQ on the DJI OSD I can disable this hack.
     set rssi_channel = 12
 
+    # Set the RSSI channel to 1000 on a failsafe. Ideally this should only be done when
+    # failsafe is also being configured, but there's no easy way to do an 'and' clause
+    # with this setup.
+    rxfail 11 s 1000
+
     # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
     # change the total voltage to cell voltage. If crossfire ever updates their
     # telemetry, I can remove this and update my OpenTX setup to report the correct
@@ -87,20 +86,26 @@ set use_unsynced_pwm = OFF
 # Clyde DSHOT600, Blinky DSHOT300, Inky -
 set motor_pwm_protocol = DSHOT600
 # Clyde, Blinky = 480, Inky = -
+# I have no idea why this is set to this value :-(
 set motor_pwm_rate = 480
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): GPS
-# On all
+# Reset the GPS parameters to the defaults
+#$ INCLUDE: presets/4.3/other/reset_gps.txt
+feature GPS
 set gps_provider = UBLOX
+set gps_auto_baud = ON
+# These are failsafe settings, so ideally they should only be set if
+# failsafe is being configured as well as GPS.
 set gps_rescue_min_dth = 50
 set gps_rescue_allow_arming_without_fix = ON
-set gps_auto_baud = ON
-# On Blinky & Inky
+# Disable the sanity checks when GPS is activated by a switch, since
+# presumably the pilot knows what they want
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ OPTION END
 
-# Only on blinky
+# Only on blinky. I'm pretty sure that this is obsolete
 #set pid_process_denom = 2
 #set tlm_halfduplex = OFF
 
