@@ -52,6 +52,12 @@ set min_throttle = 1070
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): Crossfire
     set serialrx_provider = CRSF
+    
+    # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
+    # change the total voltage to cell voltage. If crossfire ever updates their
+    # telemetry, I can remove this and update my OpenTX setup to report the correct
+    # values.
+    set report_cell_voltage = ON
 #$ OPTION END
 #$ OPTION BEGIN (CHECKED): Crossfire + DJI LQ
     set serialrx_provider = CRSF
@@ -60,6 +66,12 @@ set min_throttle = 1070
     # setup on the crossfire receiver on the radio as well. Once I can properly report
     # LQ on the DJI OSD I can disable this hack.
     set rssi_channel = 12
+
+    # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
+    # change the total voltage to cell voltage. If crossfire ever updates their
+    # telemetry, I can remove this and update my OpenTX setup to report the correct
+    # values.
+    set report_cell_voltage = ON
 #$ OPTION END
 #$ OPTION_GROUP END
 
