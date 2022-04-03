@@ -5,13 +5,15 @@
 #$ KEYWORDS: personal, GPS
 #$ AUTHOR: MythicLionMan
 #$ DESCRIPTION: This is my 'standard' quad setup that I have on pretty much all of my rigs. All changes are optional, if nothing is selected nothing will happen.
+#$ DESCRIPTION: The setup assumes that the quad will be configured for DSHOT regardless of what is selected.
+#$ DESCRIPTION: Don't change any of the settings in the "Passthrough Settings" group. They are meant to configure included scripts.
 #$ DESCRIPTION: Failsafe - Stage 2 failsafe is set to Drop. GPS rescue must be enabled via OSD.
 #$ DESCRIPTION: Radio Setup - Sets the min_check, max_check and min_throttle values to match the gimbals of my radio.
 #$ DESCRIPTION: Radio Protocol - Configures the radio protocol, and optionally LQ emulation for CrSf.
 #$ DESCRIPTION: Blackbox Tuning - Increases blackbox_p_ratio for improved resolution tuning when using PIDToolbox
 #$ DESCRIPTION: Motor Protocol - Turns on DSHOT600 and sets the motor pwm rate.
 #$ DESCRIPTION: GPS - Configures the GPS. RTH distance is set to 50m (the minimum) and sanity checks are disabled when possible. Arming without a fix is set to true.
-#$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming.
+#$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming. The ADC filter should be turned off on the radio. For crossfire setups the frequency should be locked to 150Hz.
 
 # I grabbed this setup from my CLI dumps of the backups of Inky, Blinky and Clyde. I've tried to standardize to just the stuff I custom configure on all builds.
 
@@ -121,40 +123,51 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ INCLUDE: presets/4.3/modes/MythicLionMan.txt
 #$ OPTION END
 
-# NOTE This section is disabled because I'm not sure how to pass options to the tune includes.
-#      To enable add the '$' back to the beginning of each line after the '#'.
+# These settings are designed to be passed along to included scripts. Typically the user wont change
+# them. (I'm not sure if I'm interpreting the docs correctly and this will work).
+#$ OPTION_GROUP BEGIN: Passthrough Settings (For Includes)
+# For the RC Link options
+#$ OPTION BEGIN (CHECKED): HD Freestyle
+#$ OPTION END
+# For the Supafly tune
+#$ OPTION BEGIN (CHECKED): 4s Lipo with No HD Cam (2400-2700kv motors)
+#$ OPTION END
+# For the Supafly tune
+#$ OPTION BEGIN (CHECKED): RPM filtering
+#$ OPTION END
+#$ OPTION_GROUP END
 
-# NOTE Make sure to turn off the ADC filter on the radio!
-
-# OPTION_GROUP BEGIN: Link
-# OPTION BEGIN (UNCHECKED): None
-# OPTION END
-# OPTION BEGIN (UNCHECKED): Crossfire 50Hz
-# INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
-# OPTION END
-# OPTION BEGIN (UNCHECKED): FrSky SBUS
-# INCLUDE: presets/4.3/rc_link/frsky_sbus.txt
-# OPTION END
-# OPTION_GROUP END
+#$ OPTION_GROUP BEGIN: Link
+#$ OPTION BEGIN (UNCHECKED): None
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Crossfire 50Hz
+#$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): FrSky SBUS
+#$ INCLUDE: presets/4.3/rc_link/frsky_sbus.txt
+#$ OPTION END
+#$ OPTION_GROUP END
 
 # NOTE I can't find the rc_smoothing options. I think it's been absorbed into something else
 
-# OPTION_GROUP BEGIN: Filters
-# OPTION BEGIN (UNCHECKED): None
-# OPTION END
-# OPTION BEGIN (UNCHECKED): Noisy Build
-# INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
-# OPTION END
-# OPTION_GROUP END
+#$ OPTION_GROUP BEGIN: Filters
+#$ OPTION BEGIN (UNCHECKED): None
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Very Noisy Build
+#$ INCLUDE: presets/4.3/filters/default_rpm_very_noisy.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Noisy Build
+#$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Normal Build
+#$ INCLUDE: presets/4.3/filters/default_rpm_normal.txt
+#$ OPTION END
+#$ OPTION_GROUP END
 
-
-
-# OPTION_GROUP BEGIN: Tune
-# OPTION BEGIN (UNCHECKED): None
-# OPTION END
-# OPTION BEGIN (UNCHECKED): Supafly
-# OPTION BEGIN (CHECKED): RPM filtering
-# OPTION BEGIN (UNCHECKED): 4s Lipo with No HD Cam (2400-2700kv motors)
-# INCLUDE: presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt
-# OPTION END
-# OPTION_GROUP END
+#$ OPTION_GROUP BEGIN: Tune
+#$ OPTION BEGIN (UNCHECKED): None
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Supafly
+#$ INCLUDE: presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt
+#$ OPTION END
+#$ OPTION_GROUP END
