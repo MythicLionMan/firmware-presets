@@ -1,0 +1,93 @@
+#$ TITLE: Test Includes
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: OTHER
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal
+#$ AUTHOR: MythicLionMan
+#$ DESCRIPTION: This is a test preset to verify how parameters are passed along to
+#$ DESCRIPTION: includes. It doesn't actually do anything other than output the
+#$ DESCRIPTION: supplied options.
+
+# Test include
+#
+#
+#
+
+#$ OPTION BEGIN (CHECKED): Failsafe
+# Test include has Failsafe
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Standard Features
+# Test include has Standard Features
+#$ OPTION END
+
+# Options specific to my radio
+#$ OPTION BEGIN (CHECKED): Radio Setup
+# Test include has Radio Setup
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): FrSky SBUS
+# Test include has FrSky SBUS
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Crossfire
+# Test include has Crossfire
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Crossfire + DJI LQ
+# Test include has Croffsfire + DJI LQ
+#$ OPTION END
+
+# Sets up blackbox for tuning
+#$ OPTION BEGIN (UNCHECKED): Blackbox Tuning
+# Test include has Blackbox Tuning
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Motor Protocol
+# Test include has Motor Protocol
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): GPS
+# Test include has GPS
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Setup OSD
+# Test include has Setup OSD
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Setup Rates
+# Test include has Setup Rates
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Setup Modes
+# Test include has Setup Modes
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): HD Freestyle
+# Test include has HD Freestyle
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): 4s Lipo with No HD Cam (2400-2700kv motors)
+# Test include has 4s Lipo with No HD Cam (2400-2700kv motors)
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): RPM filtering
+# Test include has RPM filtering
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Crossfire 150Hz
+# Test include has Crossfire 150Hz
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): FrSky SBUS
+# Test include has FrSky SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Very Noisy Build
+# Test include has Very Noisy Build
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): Noisy Build
+# Test include has Noisy Build
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Normal Build
+# Test include has Normal Build
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Supafly
+# Test include has Supafly
+#$ OPTION END

@@ -878,7 +878,7 @@
     },
     {
       "fullPath": "presets/4.3/other/basic_setup.txt",
-      "hash": "a6c3a5513e54026c9c45a6afd8b790e65b6d6bb3edbb7d348b5fea542d2c2902",
+      "hash": "8b42cf6b1d8b91b4d780a7b2997ad071ae763d073e2b4097087487ce26965d3c",
       "title": "Standard Configuration",
       "firmware_version": [
         "4.3"
@@ -1056,6 +1056,21 @@
         "stats"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/test_include.txt",
+      "hash": "700f0d71de4853aacda965ee046406cfc88580b5209f5a0fed6b486ea54b1d17",
+      "title": "Test Includes",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal"
+      ],
+      "author": "MythicLionMan",
       "priority": 0
     },
     {
