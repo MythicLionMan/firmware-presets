@@ -121,7 +121,34 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ INCLUDE: presets/4.3/modes/MythicLionMan.txt
 #$ OPTION END
 
-# NOTE This section is disabled because I'm not sure how to pass options to the tune includes
+# NOTE This section is disabled because I'm not sure how to pass options to the tune includes.
+#      To enable add the '$' back to the beginning of each line after the '#'.
+
+# NOTE Make sure to turn off the ADC filter on the radio!
+
+# OPTION_GROUP BEGIN: Link
+# OPTION BEGIN (UNCHECKED): None
+# OPTION END
+# OPTION BEGIN (UNCHECKED): Crossfire 50Hz
+# INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
+# OPTION END
+# OPTION BEGIN (UNCHECKED): FrSky SBUS
+# INCLUDE: presets/4.3/rc_link/frsky_sbus.txt
+# OPTION END
+# OPTION_GROUP END
+
+# NOTE I can't find the rc_smoothing options. I think it's been absorbed into something else
+
+# OPTION_GROUP BEGIN: Filters
+# OPTION BEGIN (UNCHECKED): None
+# OPTION END
+# OPTION BEGIN (UNCHECKED): Noisy Build
+# INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
+# OPTION END
+# OPTION_GROUP END
+
+
+
 # OPTION_GROUP BEGIN: Tune
 # OPTION BEGIN (UNCHECKED): None
 # OPTION END
