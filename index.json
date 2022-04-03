@@ -166,6 +166,7 @@
       "Justice - Gary Kent",
       "Jye Smith",
       "MinChan Kim",
+      "MrAlucardDante",
       "MythicLionMan",
       "NemesisXB",
       "Sjoer van der Ploeg",
@@ -255,6 +256,7 @@
       "DShot telemetry",
       "dual",
       "E7082VM",
+      "eachine",
       "ELRS",
       "emax",
       "EVO",
@@ -277,6 +279,7 @@
       "GHST",
       "GPS",
       "gyro",
+      "gyroflow",
       "gyros",
       "gyroscope",
       "HD",
@@ -288,6 +291,7 @@
       "immersion",
       "immersionRC",
       "IRC",
+      "IRC Tramp",
       "justice",
       "karate",
       "KarateBrot",
@@ -378,7 +382,7 @@
       "toothpic",
       "Tracer",
       "trainer",
-      "TRAMP",
+      "tramp",
       "transmitter",
       "tune",
       "twig",
@@ -874,7 +878,7 @@
     },
     {
       "fullPath": "presets/4.3/other/basic_setup.txt",
-      "hash": "dd0c399940576a697315046c5e79fb0f3404eae729c45c1fe3313fc992363863",
+      "hash": "a6c3a5513e54026c9c45a6afd8b790e65b6d6bb3edbb7d348b5fea542d2c2902",
       "title": "Standard Configuration",
       "firmware_version": [
         "4.3"
@@ -905,6 +909,26 @@
         "sugarK"
       ],
       "author": "sugarK",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/other/gyroflow_min_blackbox.txt",
+      "hash": "15c71e564d549b8e3abd80026c83ff17241606137af32dd5a7b6f42ee228cc4c",
+      "title": "Gyroflow minimum settings",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "OTHER",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "gyroflow",
+        "blackbox",
+        "log",
+        "DDC",
+        "Acrobaix",
+        "Garban"
+      ],
+      "author": "Garban",
       "priority": 0
     },
     {
@@ -2409,7 +2433,7 @@
     },
     {
       "fullPath": "presets/4.3/tune/defaults.txt",
-      "hash": "a34613c8541c3bf5611d5d3596ece890b902fd8d2378e7f6a03b60a59b61230b",
+      "hash": "e0d4f600277f68d45120b00656d994af8e0492cdfc7f14f6ac2542ed4a781723",
       "title": "Tune defaults for Basic 4.3 TUNES",
       "firmware_version": [
         "4.3"
@@ -2451,13 +2475,13 @@
     },
     {
       "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "4ab44d5ec889276c752cf496b9d04922da18ab369a2866c6e017d02698fd6bf2",
+      "hash": "5ac3216c39f3b1b630d6938ac943e3b00c38e15585394413d0d424f634db5e16",
       "title": "Freedom Spec 460 - 500g",
       "firmware_version": [
         "4.3"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "sugarK",
         "limon",
@@ -2632,6 +2656,33 @@
       "author": "Justice - Gary Kent",
       "force_options_review": true,
       "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.3/vtx/Eachine_Nano_V2.txt",
+      "hash": "501c014c05fd0d9b46c0cab00c6dc9edabee5dfb89ce8e2e5a9bdda03778c93b",
+      "title": "Eachine Nano V2 VTX Table",
+      "firmware_version": [
+        "4.2",
+        "4.3"
+      ],
+      "category": "VTX",
+      "status": "COMMUNITY",
+      "keywords": [
+        "eachine",
+        "Eachine",
+        "nano",
+        "Nano",
+        "irc",
+        "IRC",
+        "tramp",
+        "TRAMP",
+        "Tramp",
+        "IRC Tramp",
+        "irc tramp",
+        "IRC TRAMP"
+      ],
+      "author": "MrAlucardDante",
+      "priority": 1000000
     },
     {
       "fullPath": "presets/4.3/vtx/HDZero_race2.txt",
