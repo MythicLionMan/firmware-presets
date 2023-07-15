@@ -140,7 +140,7 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): FrSky SBUS
-#$ INCLUDE: presets/4.3/rc_link/frsky_sbus.txt
+#$ INCLUDE: presets/4.3/rc_link/frsky_sbus_fport.txt
 #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -148,13 +148,13 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 
 #$ OPTION_GROUP BEGIN: Filters
 #$ OPTION BEGIN (UNCHECKED): Very Noisy Build
-#$ INCLUDE: presets/4.3/filters/default_rpm_very_noisy.txt
+#$ INCLUDE: presets/4.3/filters/basic_rpm_very_noisy.txt
 #$ OPTION END
 #$ OPTION BEGIN (CHECKED): Noisy Build
-#$ INCLUDE: presets/4.3/filters/default_rpm_noisy.txt
+#$ INCLUDE: presets/4.3/filters/basic_rpm_noisy.txt
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): Normal Build
-#$ INCLUDE: presets/4.3/filters/default_rpm_normal.txt
+#$ INCLUDE: presets/4.3/filters/basic_rpm_normal.txt
 #$ OPTION END
 #$ OPTION_GROUP END
 
