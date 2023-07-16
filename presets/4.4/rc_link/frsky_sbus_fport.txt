@@ -1,5 +1,5 @@
 #$ TITLE: FrSky Sbus or FPort
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: frsky, sbus, fport, 9ms, 111hz, rc, link, smoothing
@@ -31,7 +31,9 @@ set serialrx_halfduplex = ON
 set feedforward_averaging = OFF
 set feedforward_smooth_factor = 25
 set feedforward_jitter_factor = 8
-set frsky_vfas_precision = 1
+# NOTE This setting was enabled in the 4.3 version of this preset, but isn't avialable in 4.4. I created this
+#      new version of the preset to disable it, since it causes errors even if this preset isn't selected
+#set frsky_vfas_precision = 1
 
 # we do not recommend disabling rc smoothing
 set rc_smoothing = ON
@@ -69,8 +71,8 @@ set rc_smoothing_feedforward_cutoff = 25
 #$ OPTION BEGIN (UNCHECKED): Cinematic
 set feedforward_smooth_factor = 45
 set feedforward_jitter_factor = 14
-set rc_smoothing_auto_factor = 130  
-set rc_smoothing_auto_factor_throttle = 70  
+set rc_smoothing_auto_factor = 130
+set rc_smoothing_auto_factor_throttle = 70
 set rc_smoothing_setpoint_cutoff = 12
 set rc_smoothing_feedforward_cutoff = 12
 set rc_smoothing_throttle_cutoff = 20
