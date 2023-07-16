@@ -813,10 +813,11 @@
     },
     {
       "fullPath": "presets/4.3/modes/MythicLionMan.txt",
-      "hash": "de5d25c3737cff17b81e8eadd5cf010a91c8da750bc36f85a6e40b4fc9d8cbf6",
+      "hash": "77941678d661718e9d255b2ea2a69fb4a8f6dbf97bf71b7883d79959c71a2287",
       "title": "Default 4.3 Modes and Adjustment settings",
       "firmware_version": [
-        "4.3"
+        "4.3",
+        "4.4"
       ],
       "category": "MODES",
       "status": "COMMUNITY",
@@ -854,10 +855,11 @@
     },
     {
       "fullPath": "presets/4.3/osd/MythicLionMan.txt",
-      "hash": "ba058e956e1e7756b1c2bf2d182c8fee42ba08fc803e890c94ace2b92b435c11",
+      "hash": "c3e35eb14cf5bf55b9907335708473825e2bf52754971c55c37529191db48727",
       "title": "MythicLionMan OSD",
       "firmware_version": [
-        "4.3"
+        "4.3",
+        "4.4"
       ],
       "category": "OSD",
       "status": "COMMUNITY",
@@ -1253,10 +1255,11 @@
     },
     {
       "fullPath": "presets/4.3/other/test_include.txt",
-      "hash": "700f0d71de4853aacda965ee046406cfc88580b5209f5a0fed6b486ea54b1d17",
+      "hash": "33869b5d68c2e7ddfc1dcfd81f502315d92c56acdbed6bf78a4e43fdf00f93f0",
       "title": "Test Includes",
       "firmware_version": [
-        "4.3"
+        "4.3",
+        "4.4"
       ],
       "category": "OTHER",
       "status": "COMMUNITY",
@@ -1440,10 +1443,11 @@
     },
     {
       "fullPath": "presets/4.3/rates/MythicLionMan.txt",
-      "hash": "eff9d216a5efe7635de8f79fbabaf1715fcdce652797542ba4dab4341f2df7b6",
+      "hash": "ea562edfba78d8d6ac87a88cff23fe83fb70ea74d45e79da0a410cc03ab10f79",
       "title": "MythicLionMan rates",
       "firmware_version": [
-        "4.3"
+        "4.3",
+        "4.4"
       ],
       "category": "RATES",
       "status": "COMMUNITY",
@@ -1780,11 +1784,10 @@
     },
     {
       "fullPath": "presets/4.3/rc_link/frsky_sbus_fport.txt",
-      "hash": "14a2f0528c1916e45526527f90d2067e1e77f91a3397cb7c20dac2e17d92a1b3",
+      "hash": "703c55725a95c082fafab14162d8d836a934c1752e73b9f6b79cfcec7fca43ad",
       "title": "FrSky Sbus or FPort",
       "firmware_version": [
-        "4.3",
-        "4.4"
+        "4.3"
       ],
       "category": "RC_LINK",
       "status": "OFFICIAL",
@@ -3740,6 +3743,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/osd/MythicLionMan.txt",
+      "hash": "9fe1de7f0e243498cd2c0d61d17725e669c14051af2a1d33197dd8f872b0631a",
+      "title": "MythicLionMan OSD",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal",
+        "DJI",
+        "GPS"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/osd/QuadMcFly_DJI_HD_OSD.txt",
       "hash": "1bdc587fd4223c8526a7954c0b44e7bfc98a8b9d556de729d24376d06e29f3be",
       "title": "QuadMcFly - DJI HD OSD",
@@ -3771,6 +3791,23 @@
         "OSD"
       ],
       "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/other/MythicLionMan_5in_setup.txt",
+      "hash": "eaeeebf820a08011e9bc7af9f5618a412306896637a232514f167a226fd84dc5",
+      "title": "MythicLionMan Setup 5in",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal",
+        "GPS"
+      ],
+      "author": "MythicLionMan",
       "priority": 0
     },
     {
@@ -3857,6 +3894,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/other/reset_gps.txt",
+      "hash": "f41311fdc38e740b6472516197a7cc7126d1c75b57b2002fc2ed37e9ae30e726",
+      "title": "Reset GPS settings",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OTHER",
+      "status": "COMMUNITY",
+      "keywords": [
+        "defaults",
+        "reset",
+        "GPS"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/rates/DavideFPVFreeStyle.txt",
       "hash": "49d062988bc8fb428ec542d3649eda1f08b309edf773536cef317c958d893185",
       "title": "Davide FPV Rates for Freestyle with Cinematic Option",
@@ -3918,6 +3972,29 @@
         "link"
       ],
       "author": "Jakub Espandr (FlyCamCzech)",
+      "force_options_review": true,
+      "priority": 10000000000
+    },
+    {
+      "fullPath": "presets/4.4/rc_link/frsky_sbus_fport.txt",
+      "hash": "1a9b222df89e0f719538d9a074b9387b245e572f434d054ba58ca5bcc73d0c40",
+      "title": "FrSky Sbus or FPort",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "RC_LINK",
+      "status": "OFFICIAL",
+      "keywords": [
+        "frsky",
+        "sbus",
+        "fport",
+        "9ms",
+        "111hz",
+        "rc",
+        "link",
+        "smoothing"
+      ],
+      "author": "ctzsnooze",
       "force_options_review": true,
       "priority": 10000000000
     },
