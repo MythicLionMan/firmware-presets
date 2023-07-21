@@ -16,56 +16,34 @@
 #$ DESCRIPTION: GPS Sats, GPS Speed, Altitude, Home Direction, Home Distance
 #$ INCLUDE: presets/4.3/osd/defaults.txt
 
-# This is a synthesis of my OSD settings from old Betaflight CLI dumps. I've merged the values from the
-# most recent backups of Inky, Blinky, and Clyde. I suspect that some of the difference are caused by my
-# tweaking the positions of some elements on Inky. I suspect further differences are caused by obsolete
-# parameters from older versions of Betaflight. Another difference may be caused by sending the CrSf
-# LQ using the hack for DJI (which will hopefully not be necessary soon).
-# I hope to merge these all into one once I can test it out, but I'm just usign the values from Clyde for now.
-
-# Clyde
-# Clyde, Inky, Blinky all had the same value
-set osd_home_dist_pos = 2065
+set osd_home_dist_pos = 2080
 set osd_home_dir_pos = 2063
-set osd_warnings_pos = 2049
+set osd_warnings_pos = 2246
 set osd_disarmed_pos = 2283
 set osd_stat_max_dist = ON
 set osd_stat_max_alt = ON
 set osd_stat_bbox = OFF
 set osd_stat_bb_no = OFF
-# Clyde had a value, Inky and Blinky had no value.
+
 set osd_cap_alarm = 1500
 set osd_remaining_time_estimate_pos = 344
 set osd_vtx_channel_pos = 65
 set osd_ah_sbar_pos = 238
-# Clyde had a value of 2113, Inky and Blinky were 2427
-set osd_rssi_pos = 2113
-# Clyde had a value of 2455, Inky and Blinky were 2552
+set osd_rssi_pos = 2363
 set osd_tim_1_pos = 2455
-# Inky had a value of 2561. Clyde and Binky had no value
-#set osd_tim1 = 2561
-# Clyde had a value of 2073. Inky and Blinky were 2074.
-set osd_flymode_pos = 2073
-# Clyde had a value of 110, Inky and Blinky were 234
+set osd_tim1 = 2561
+set osd_flymode_pos = 2074
 set osd_ah_pos = 110
-# Clyde had a value of 2424, Inky and Blinky were 2457
 set osd_mah_drawn_pos = 2424
-# Clyde had a value of 2540, Inky and Blinky were 2543
 set osd_craft_name_pos = 2540
-# Clyde had a value of 2105, Inky and Blinky were 2137
-set osd_gps_speed_pos = 2105
-# Clyde had a value of 2137, Inky and Blinky were 2070
-set osd_gps_sats_pos = 2137
-# Clyde had a value of 2081, Inky and Blinky were 2103
-set osd_altitude_pos = 2081
-# Clyde had a value of 2392, Inky and Blinky were 2488
+set osd_gps_speed_pos = 2106
+set osd_gps_sats_pos = 2112
+set osd_altitude_pos = 2048
 set osd_avg_cell_voltage_pos = 2392
 
-# Inky & Blinky had a value, Clyde did not. I think this was for setting the
-# camera angle.
 #set osd_anti_gravity_pos = 34
-#set osd_crosshairs_pos = 4301
-#set osd_pit_ang_pos = 4226
-#set osd_rol_ang_pos = 4194
-#set osd_flip_arrow_pos = 2282
-#set osd_stat_max_esc_temp = ON
+set osd_crosshairs_pos = 4301
+set osd_pit_ang_pos = 4245
+set osd_rol_ang_pos = 4309
+set osd_flip_arrow_pos = 2282
+set osd_stat_max_esc_temp = ON
