@@ -140,6 +140,7 @@
       "4.5"
     ],
     "category": [
+      "BNF",
       "FILTERS",
       "LEDS",
       "MODES",
@@ -504,6 +505,22 @@
   },
   "presets": [
     {
+      "fullPath": "presets/4.3/bnf/MythicLionMan_SpeedyBee_Serial.txt",
+      "hash": "648963eb13964202f684bb99228d74ec990a9af617b09d83727afd7bce308a28",
+      "title": "MythicLionMan SpeedyBee Serial",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/filters/basic_no_rpm_clean.txt",
       "hash": "c0bd2461401e586a4bdb5bf104db999a11bf8341762dbe509adf2d676f5b4412",
       "title": "4.3 Filter settings for CLEAN build WITH NO RPM FILTERING.",
@@ -855,11 +872,10 @@
     },
     {
       "fullPath": "presets/4.3/osd/MythicLionMan.txt",
-      "hash": "c3e35eb14cf5bf55b9907335708473825e2bf52754971c55c37529191db48727",
+      "hash": "ba058e956e1e7756b1c2bf2d182c8fee42ba08fc803e890c94ace2b92b435c11",
       "title": "MythicLionMan OSD",
       "firmware_version": [
-        "4.3",
-        "4.4"
+        "4.3"
       ],
       "category": "OSD",
       "status": "COMMUNITY",
@@ -3743,7 +3759,24 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.4/osd/MythicLionMan.txt",
+      "fullPath": "presets/4.4/osd/MythicLionManHD.txt",
+      "hash": "2b83079b483e13135ec8656c2b013494c8e8fe35868d58b5c3d7b04a89ba5441",
+      "title": "MythicLionMan OSD",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal",
+        "DJI",
+        "GPS"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/MythicLionManSD.txt",
       "hash": "9fe1de7f0e243498cd2c0d61d17725e669c14051af2a1d33197dd8f872b0631a",
       "title": "MythicLionMan OSD",
       "firmware_version": [
@@ -3795,7 +3828,7 @@
     },
     {
       "fullPath": "presets/4.4/other/MythicLionMan_5in_setup.txt",
-      "hash": "eaeeebf820a08011e9bc7af9f5618a412306896637a232514f167a226fd84dc5",
+      "hash": "e848061e0e11320956d52b39737b6dab91be95280c7777bef76914e57310b54a",
       "title": "MythicLionMan Setup 5in",
       "firmware_version": [
         "4.3",
