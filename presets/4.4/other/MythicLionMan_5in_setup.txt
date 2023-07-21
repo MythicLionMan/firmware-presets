@@ -23,7 +23,6 @@
 rxfail 3 h
 #$ OPTION END
 
-
 #$ OPTION BEGIN (CHECKED): Standard Features
 # I have airmode on a switch, so I want it disabled by default
 feature -AIRMODE
@@ -91,7 +90,10 @@ set motor_pwm_protocol = DSHOT600
 set motor_pwm_rate = 480
 #$ OPTION END
 
+# This will enable the GPS feature, as well as being passed to the flight controller
+# script to configure the serial port for GPS
 #$ OPTION BEGIN (CHECKED): GPS
+# This setting is also read by the flight controller script to configure the serial port for GPS
 # Reset the GPS parameters to the defaults
 #$ INCLUDE: presets/4.4/other/reset_gps.txt
 feature GPS
@@ -111,13 +113,39 @@ set gps_rescue_allow_arming_without_fix = ON
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ OPTION END
 
+#$ OPTION_GROUP BEGIN: OSD Setup
+#$ OPTION BEGIN (CHECKED): HD OSD MSP
+# This option is also passed on to the flight controller setup script to setup the
+# OSD serial options
+#$ INCLUDE: presets/4.4/osd/MythicLionManSD.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): HD OSD
+# This option is also passed on to the flight controller setup script to setup the
+# OSD serial options
+#$ INCLUDE: presets/4.4/osd/MythicLionManHD.txt
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): SD OSD
+#$ OPTION END
+#$ OPTION_GROUP END
+
+# This setting is passed through to the FlightController script to configure the RX serial port
+#$ OPTION BEGIN (CHECKED): Serial RX
+#$ OPTION END
+
+# Flight Controller Specific Configuration options
+#$ OPTION_GROUP BEGIN: Flight Controller
+#$ OPTION BEGIN (CHECKED): SpeedyBee F7 V2
+#$ INCLUDE: presets/4.3/bnf/MythicLionMan_SpeedyBee_Serial.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): No Flight Controller
+#$ OPTION END
+#$ OPTION_GROUP END
+
 # Only on blinky. I'm pretty sure that this is obsolete
 #set pid_process_denom = 2
 #set tlm_halfduplex = OFF
-
-#$ OPTION BEGIN (CHECKED): Setup OSD
-#$ INCLUDE: presets/4.4/osd/MythicLionMan.txt
-#$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Setup Rates
 #$ INCLUDE: presets/4.3/rates/MythicLionMan.txt
