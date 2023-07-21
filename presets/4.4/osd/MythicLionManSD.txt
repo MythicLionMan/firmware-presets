@@ -20,10 +20,7 @@ set osd_home_dist_pos = 2080
 set osd_home_dir_pos = 2063
 set osd_warnings_pos = 2246
 set osd_disarmed_pos = 2283
-set osd_stat_max_dist = ON
-set osd_stat_max_alt = ON
-set osd_stat_bbox = OFF
-set osd_stat_bb_no = OFF
+set osd_stat_bitmask = 429628
 
 set osd_cap_alarm = 1500
 set osd_remaining_time_estimate_pos = 344
@@ -46,4 +43,3 @@ set osd_crosshairs_pos = 4301
 set osd_pit_ang_pos = 4245
 set osd_rol_ang_pos = 4309
 set osd_flip_arrow_pos = 2282
-set osd_stat_max_esc_temp = ON
