@@ -1,4 +1,4 @@
-#$ TITLE: MythicLionMan OSD
+#$ TITLE: MythicLionMan SD OSD
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: OSD
 #$ STATUS: COMMUNITY
@@ -43,3 +43,4 @@ set osd_crosshairs_pos = 4301
 set osd_pit_ang_pos = 4245
 set osd_rol_ang_pos = 4309
 set osd_flip_arrow_pos = 2282
+set vcd_video_system = PAL
