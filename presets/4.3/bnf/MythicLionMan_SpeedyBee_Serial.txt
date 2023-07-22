@@ -1,0 +1,28 @@
+#$ TITLE: MythicLionMan SpeedyBee Serial
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal
+#$ AUTHOR: MythicLionMan
+#$ DESCRIPTION: This is the serial port setup that I use on SpeedyBee boards for my periferals. This probably
+#$ DESCRIPTION: won't work for other people with different accesories or on different boards.
+
+# TODO I should clear out all existing serial port config
+
+#$ OPTION BEGIN (CHECKED): Serial RX
+serial 0 64 115200 57600 0 115200
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): GPS
+serial 5 2 115200 57600 0 115200
+#$ OPTION END
+
+#$ OPTION_GROUP BEGIN: OSD Setup
+#$ OPTION BEGIN (UNCHECKED): HD OSD
+serial 1 1 115200 57600 0 115200
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): HD OSD MSP
+serial 1 1 115200 57600 0 115200
+set displayport_msp_serial = 1
+#$ OPTION END
+#$ OPTION_GROUP END
