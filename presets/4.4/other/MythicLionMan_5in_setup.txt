@@ -29,6 +29,7 @@ feature -AIRMODE
 feature TELEMETRY
 beeper -ON_USB
 set small_angle = 180
+set pilot_name = Mythic Lion Man
 #$ OPTION END
 
 # Options specific to my radio
@@ -44,7 +45,7 @@ set min_throttle = 1070
 #$ OPTION BEGIN (UNCHECKED): FrSky SBUS
     set serialrx_provider = SBUS
 #$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): Crossfire
+#$ OPTION BEGIN (CHECKED): Crossfire
     set serialrx_provider = CRSF
     
     # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
@@ -53,7 +54,7 @@ set min_throttle = 1070
     # values.
     set report_cell_voltage = ON
 #$ OPTION END
-#$ OPTION BEGIN (CHECKED): Crossfire + DJI LQ
+#$ OPTION BEGIN (UNCHECKED): Crossfire + DJI LQ
     set serialrx_provider = CRSF
 
     # Sets up CrSf RSSI for DJI Goggles by reading RSSI from a channel. This requires
@@ -115,17 +116,17 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 
 #$ OPTION_GROUP BEGIN: OSD Setup
 #$ OPTION BEGIN (CHECKED): HD OSD MSP
-# This option is also passed on to the flight controller setup script to setup the
+# This option is also detected by the flight controller setup script to setup the
 # OSD serial options
-#$ INCLUDE: presets/4.4/osd/MythicLionManSD.txt
+#$ INCLUDE: presets/4.4/osd/MythicLionManHD.txt
 #$ OPTION END
-
 #$ OPTION BEGIN (UNCHECKED): HD OSD
 # This option is also passed on to the flight controller setup script to setup the
 # OSD serial options
 #$ INCLUDE: presets/4.4/osd/MythicLionManHD.txt
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): SD OSD
+#$ INCLUDE: presets/4.4/osd/MythicLionManSD.txt
 #$ OPTION END
 #$ OPTION_GROUP END
 
@@ -136,7 +137,7 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 # Flight Controller Specific Configuration options
 #$ OPTION_GROUP BEGIN: Flight Controller
 #$ OPTION BEGIN (CHECKED): SpeedyBee F7 V2
-#$ INCLUDE: presets/4.3/bnf/MythicLionMan_SpeedyBee_Serial.txt
+#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_Serial.txt
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): No Flight Controller
