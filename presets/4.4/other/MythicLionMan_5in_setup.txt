@@ -48,6 +48,9 @@ set min_throttle = 1070
 #$ OPTION BEGIN (CHECKED): Crossfire
     set serialrx_provider = CRSF
     
+    # rssi_channel can be disabled since the quad should be configured with full OSD
+    set rssi_channel = 0
+    
     # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
     # change the total voltage to cell voltage. If crossfire ever updates their
     # telemetry, I can remove this and update my OpenTX setup to report the correct
