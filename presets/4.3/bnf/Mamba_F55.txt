@@ -1,0 +1,11 @@
+#$ TITLE: MythicLionMan Mamba F55 ESC
+#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal
+#$ AUTHOR: MythicLionMan
+#$ DESCRIPTION: This is the current meter configuration for the Mamba F55 ESC
+
+set ibata_scale = 80
+set ibata_offset = 0

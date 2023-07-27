@@ -135,6 +135,16 @@ set osd_displayport_device = MSP
 #$ OPTION END
 #$ OPTION_GROUP END
 
+# ESC Specific Configuration options
+#$ OPTION_GROUP BEGIN: ESC
+#$ OPTION BEGIN (CHECKED): Mamba F55
+#$ INCLUDE: presets/4.3/bnf/Mamba_F55.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): No ESC
+#$ OPTION END
+#$ OPTION_GROUP END
+
 #$ OPTION BEGIN (CHECKED): Setup Rates
 #$ INCLUDE: presets/4.3/rates/MythicLionMan.txt
 #$ OPTION END
