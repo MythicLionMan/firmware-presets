@@ -147,6 +147,16 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 #$ OPTION END
 #$ OPTION_GROUP END
 
+# ESC Specific Configuration options
+#$ OPTION_GROUP BEGIN: ESC
+#$ OPTION BEGIN (CHECKED): Mamba F55
+#$ INCLUDE: presets/4.3/bnf/Mamba_F55.txt
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): No ESC
+#$ OPTION END
+#$ OPTION_GROUP END
+
 # Only on blinky. I'm pretty sure that this is obsolete
 #set pid_process_denom = 2
 #set tlm_halfduplex = OFF
