@@ -1,11 +1,13 @@
 #$ TITLE: Default 4.3 Modes and Adjustment settings
 #$ FIRMWARE_VERSION: 4.3
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: MODES
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: personal, mode, modes, adjustments, aux, switch
 #$ AUTHOR: MythicLionMan
-#$ DESCRIPTION: These are my personal modes setup. I put them here for my own use. They really only make sense with my OpenTX setup.
+#$ DESCRIPTION: These are my personal modes setup. I put them here for my own use. They really only make sense with my EdgeTX setup.
+#$ DESCRIPTION: They have been updated from the old set that I used to use.
 #$ DESCRIPTION: Arming is Aux2. AirMode is selected in the third position, disabled in the second. Prearm requires that Aux5
 #$ DESCRIPTION: is pulled momentarily.
 #$ DESCRIPTION: Rateprofiles 0, 1 & 2 can be selected with Aux4

@@ -1,5 +1,6 @@
 #$ TITLE: MythicLionMan SpeedyBee Serial
 #$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: personal
