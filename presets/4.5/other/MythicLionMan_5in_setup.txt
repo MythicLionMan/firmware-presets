@@ -14,6 +14,7 @@
 #$ DESCRIPTION: Motor Protocol - Turns on DSHOT600 and sets the motor pwm rate.
 #$ DESCRIPTION: GPS - Configures the GPS. Sanity checks are disabled when possible. Arming without a fix is set to true.
 #$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming. The ADC filter should be turned off on the radio. For crossfire setups the frequency should be locked to 150Hz.
+#$ WARNING: Remember to set the GPS Rescue Hover throttle value accurately.
 
 # I grabbed this setup from my CLI dumps of the backups of Inky, Blinky and Clyde. I've tried to standardize to just the stuff I custom configure on all builds.
 
@@ -93,22 +94,21 @@ set motor_pwm_rate = 480
 #$ OPTION BEGIN (CHECKED): GPS
 # This setting is also read by the flight controller script to configure the serial port for GPS
 # Reset the GPS parameters to the defaults
-#$ INCLUDE: presets/4.4/other/reset_gps.txt
+#$ INCLUDE: presets/4.5/other/reset_gps.txt
 feature GPS
-set gps_provider = UBLOX
 set gps_auto_baud = ON
 # These are failsafe settings, so ideally they should only be set if
 # failsafe is being configured as well as GPS.
 
-# TODO I set this on 4.3, but the parameter is no longer available on 4.4
-#      I believe that it has been renamed to gps_rescue_min_start_dist and
-#      the default value of 15 is better than 50, so I'm just disabling this.
-#      But I should check to see if the name change is what I expected.
-#set gps_rescue_min_dth = 50
+# If I'm in a situation where I feel I need GPS rescue I'll make sure I have a fix before taking off
 set gps_rescue_allow_arming_without_fix = ON
 # Disable the sanity checks when GPS is activated by a switch, since
-# presumably the pilot knows what they want
-set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+# presumably the pilot knows what they want (this is now the default value, so I'm commenting it out)
+#set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+# Enable Gallileo satellites for higher accuracy
+set gps_ublox_use_galileo = ON
+# I always want to return to where I took off, not to the last place I crashed
+set gps_set_home_point_once = ON
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: OSD Setup
