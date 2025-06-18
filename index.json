@@ -950,7 +950,7 @@
     },
     {
       "fullPath": "presets/4.3/modes/MythicLionMan.txt",
-      "hash": "46673595109f0b9e8a586e2cac64467ef3c27a2da5461506324936038d8ef235",
+      "hash": "11208bd35392921e8045a2c0558dcb52ffb3716e9886658a526678667957a3d0",
       "title": "Default 4.3 Modes and Adjustment settings",
       "firmware_version": [
         "4.3",
@@ -4253,9 +4253,25 @@
       "priority": 1000000
     },
     {
-      "fullPath": "presets/4.4/bnf/MythicLionMan_SpeedyBee_Serial.txt",
-      "hash": "c3c49e749544af35dae67c6a9c4559c50e1596b0cac256eb6db1ca1862cb1f62",
-      "title": "MythicLionMan SpeedyBee Serial",
+      "fullPath": "presets/4.4/bnf/MythicLionMan_SpeedyBee_F4_Serial.txt",
+      "hash": "7644e1f8d29cf86dc191b8d56c08db6e89a8b0769ea5788a5f91b01d0dde6a38",
+      "title": "MythicLionMan SpeedyBee F4 Serial",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/MythicLionMan_SpeedyBee_F7_Serial.txt",
+      "hash": "48b563ad7ae02649606193ce70be5e76e5a59a6d914698b790e29f8f5913c6f3",
+      "title": "MythicLionMan SpeedyBee F7 Serial",
       "firmware_version": [
         "4.4",
         "4.5"
@@ -4546,7 +4562,7 @@
     },
     {
       "fullPath": "presets/4.4/osd/MythicLionManHD.txt",
-      "hash": "90f64035d85ec15806070b0b4bc89b859fddb28ff7111eafab84ddf1de6ff2c4",
+      "hash": "c0228eecfd6a4f0ad99e3d56930052da8ec5b0563da08bf5a163be6c34ceb928",
       "title": "MythicLionMan HD OSD",
       "firmware_version": [
         "4.4",
@@ -4564,10 +4580,11 @@
     },
     {
       "fullPath": "presets/4.4/osd/MythicLionManSD.txt",
-      "hash": "f0de8e1eccea2b5ecb70a4091a119558ac5c3ad284d68da332eb1214b88e7906",
+      "hash": "d135edb68447e3045beae861fc29c7df72201ddd7112c41dbb77e4efeaa719ba",
       "title": "MythicLionMan SD OSD",
       "firmware_version": [
-        "4.4"
+        "4.4",
+        "4.5"
       ],
       "category": "OSD",
       "status": "COMMUNITY",
@@ -4658,7 +4675,7 @@
     },
     {
       "fullPath": "presets/4.4/other/MythicLionMan_5in_setup.txt",
-      "hash": "0bfd747d3f1651c2a7b21fbd5ebf2434184c0b332b754b7d1ba63bd8fe2b2dec",
+      "hash": "d76aab9d44bb1ff4f25deda5fefabef8d8a3be78312e596b44880b258b96bf60",
       "title": "MythicLionMan Setup 5in",
       "firmware_version": [
         "4.3",
@@ -6774,7 +6791,7 @@
     },
     {
       "fullPath": "presets/4.5/other/MythicLionMan_5in_setup.txt",
-      "hash": "9620d8cd985f0d53c7a128fe40ef2a32fbe4482c62abb329ec630a14c1fb760a",
+      "hash": "4c97dbb01d848c724323480d421d53ffa363200aebda7e833612d5b6e1ab4563",
       "title": "MythicLionMan Setup 5in",
       "firmware_version": [
         "4.5"
