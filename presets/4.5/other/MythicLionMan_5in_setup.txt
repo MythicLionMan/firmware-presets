@@ -105,6 +105,9 @@ set motor_pwm_rate = 480
 #$ INCLUDE: presets/4.5/other/reset_gps.txt
 feature GPS
 set gps_auto_baud = ON
+# The 4.5/other/reset_gps.txt script is setting this to the wrong default value. This restores it to the actual default
+# which seems more user friendly (if a bit less safe)
+set gps_rescue_min_start_dist = 15
 # These are failsafe settings, so ideally they should only be set if
 # failsafe is being configured as well as GPS.
 
