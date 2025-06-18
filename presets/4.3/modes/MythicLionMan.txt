@@ -8,27 +8,24 @@
 #$ AUTHOR: MythicLionMan
 #$ DESCRIPTION: These are my personal modes setup. I put them here for my own use. They really only make sense with my EdgeTX setup.
 #$ DESCRIPTION: They have been updated from the old set that I used to use.
-#$ DESCRIPTION: Arming is Aux2. AirMode is selected in the third position, disabled in the second. Prearm requires that Aux5
-#$ DESCRIPTION: is pulled momentarily.
+#$ DESCRIPTION: Arming is Aux1 (ELRS implements Aux1 as a 1 bit channel for arming safety)
+#$ DESCRIPTION: Prearm, AirMode and Turtle mode are multiplexed onto Aux2.
 #$ DESCRIPTION: Rateprofiles 0, 1 & 2 can be selected with Aux4
-#$ DESCRIPTION: Turtle mode is engaged with Aux3.
-#$ DESCRIPTION: The panic switch will either switch to Horizon mode or engage GPS rescue.
-#$ DESCRIPTION: Flight mode is set with Aux1. A three position switch will toggle between Acro, Horizon and Angle.
-#$ DESCRIPTION: VTX Camera 'real pit' is bound to Aux6
+#$ DESCRIPTION: The panic switch will either switch to Angle mode or engage GPS rescue, and always engages the beeper.
+#$ DESCRIPTION: The panic functions are Angle mode, GPS Rescue and Beeper and are multiplexed onto Aux3.
+#$ DESCRIPTION: Eventually I'd also like to have loiter mode on this channel as an alternative to rescue.
 
 # aux
-aux 0 0 1 1300 2100 0 0
-aux 1 1 0 1700 2100 0 0
+aux 0 0 0 1550 2100 0 0
+aux 1 1 2 1450 1550 0 0
 aux 2 2 0 1300 1700 0 0
-aux 3 46 2 1250 1400 0 0
-aux 4 13 2 900 1425 0 0
-aux 5 28 1 1700 2100 0 0
-aux 6 35 2 1400 1600 0 0
-aux 7 36 4 1450 2100 0 0
-
-# Additional modes that were only enabled for Inky
-aux 8 40 5 1550 2100 0 0
-aux 9 40 5 900 1425 0 0
+aux 3 46 2 1675 1825 0 0
+aux 4 13 2 1575 2100 0 0
+aux 5 28 1 1475 1525 0 0
+aux 6 28 1 975 1025 0 0
+aux 7 35 1 1700 2100 0 0
+aux 8 35 1 1150 1400 0 0
+aux 9 36 1 1450 2100 0 0
 
 # adjrange
 adjrange 0 0 3 900 2100 12 3 0 0

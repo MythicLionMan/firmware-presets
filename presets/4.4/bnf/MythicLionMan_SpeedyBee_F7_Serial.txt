@@ -1,11 +1,11 @@
-#$ TITLE: MythicLionMan SpeedyBee Serial
+#$ TITLE: MythicLionMan SpeedyBee F7 Serial
 #$ FIRMWARE_VERSION: 4.4
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: personal
 #$ AUTHOR: MythicLionMan
-#$ DESCRIPTION: This is the serial port setup that I use on SpeedyBee boards for my periferals. This probably
+#$ DESCRIPTION: This is the serial port setup that I use on F7 SpeedyBee boards for my peripherals. This probably
 #$ DESCRIPTION: won't work for other people with different accesories or on different boards.
 
 # TODO I should clear out all existing serial port config

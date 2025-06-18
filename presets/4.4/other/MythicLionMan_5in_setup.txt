@@ -139,10 +139,12 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 
 # Flight Controller Specific Configuration options
 #$ OPTION_GROUP BEGIN: Flight Controller
-#$ OPTION BEGIN (CHECKED): SpeedyBee F7 V2
-#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_Serial.txt
+#$ OPTION BEGIN (UNCHECKED): SpeedyBee F7 V2
+#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_F7_Serial.txt
 #$ OPTION END
-
+#$ OPTION BEGIN (CHECKED): SpeedyBee F4
+#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_F4_Serial.txt
+#$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): No Flight Controller
 #$ OPTION END
 #$ OPTION_GROUP END

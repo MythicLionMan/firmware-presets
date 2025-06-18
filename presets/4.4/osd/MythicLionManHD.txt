@@ -17,6 +17,7 @@
 #$ DESCRIPTION: GPS Sats, GPS Speed, Altitude, Home Direction, Home Distance
 #$ INCLUDE: presets/4.4/osd/defaults.txt
 
+#TODO Perhaps I should change the LQ/RSSI DISPLAY when Radio Protocol == ELRS (or just always do it the new way)
 set osd_cap_alarm = 1500
 set osd_tim1 = 2561
 set osd_vbat_pos = 341

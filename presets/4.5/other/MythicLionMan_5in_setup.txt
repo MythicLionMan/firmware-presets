@@ -13,8 +13,7 @@
 #$ DESCRIPTION: Blackbox Tuning - Increases blackbox_p_ratio for improved resolution tuning when using PIDToolbox
 #$ DESCRIPTION: Motor Protocol - Turns on DSHOT600 and sets the motor pwm rate.
 #$ DESCRIPTION: GPS - Configures the GPS. Sanity checks are disabled when possible. Arming without a fix is set to true.
-#$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming. The ADC filter should be turned off on the radio. For crossfire setups the frequency should be locked to 150Hz.
-#$ WARNING: Remember to set the GPS Rescue Hover throttle value accurately.
+#$ WARNING: DSHOT with the ESCs that don't support DSHOT is dangerous and can spin up the motors right away without arming. The ADC filter should be turned off on the radio. For crossfire setups the frequency should be locked to 150Hz. Remember to set the GPS Rescue Hover throttle value accurately.
 
 # I grabbed this setup from my CLI dumps of the backups of Inky, Blinky and Clyde. I've tried to standardize to just the stuff I custom configure on all builds.
 
@@ -45,7 +44,16 @@ set min_throttle = 1070
 #$ OPTION BEGIN (UNCHECKED): FrSky SBUS
     set serialrx_provider = SBUS
 #$ OPTION END
-#$ OPTION BEGIN (CHECKED): Crossfire
+#$ OPTION BEGIN (CHECKED): ELRS
+    set serialrx_provider = CRSF
+        
+    # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
+    # change the total voltage to cell voltage. If crossfire ever updates their
+    # telemetry, I can remove this and update my OpenTX setup to report the correct
+    # values.
+    set report_cell_voltage = ON
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
     set serialrx_provider = CRSF
     
     # rssi_channel can be disabled since the quad should be configured with full OSD
@@ -133,8 +141,11 @@ set gps_set_home_point_once = ON
 
 # Flight Controller Specific Configuration options
 #$ OPTION_GROUP BEGIN: Flight Controller
-#$ OPTION BEGIN (CHECKED): SpeedyBee F7 V2
-#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_Serial.txt
+#$ OPTION BEGIN (UNCHECKED): SpeedyBee F7 V2
+#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_F7_Serial.txt
+#$ OPTION END
+#$ OPTION BEGIN (CHECKED): SpeedyBee F4
+#$ INCLUDE: presets/4.4/bnf/MythicLionMan_SpeedyBee_F4_Serial.txt
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): No Flight Controller
@@ -173,14 +184,15 @@ set gps_set_home_point_once = ON
 #$ OPTION END
 #$ OPTION_GROUP END
 
+#NOTE If the tune also configures the link it will overwrite these values
 #$ OPTION_GROUP BEGIN: Link
-#$ OPTION BEGIN (CHECKED): ELRS 250Hz
+#$ OPTION BEGIN (CHECKED): Tracer/ELRS 250Hz
 #$ INCLUDE: presets/4.3/rc_link/elrs_250hz.txt
 #$ OPTION END
-#$ OPTION BEGIN (CHECKED): ELRS 500Hz
+#$ OPTION BEGIN (UNCHECKED): ELRS 500Hz
 #$ INCLUDE: presets/4.3/rc_link/elrs_500hz.txt
 #$ OPTION END
-#$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz
+#$ OPTION BEGIN (UNCHECKED): Crossfire 150Hz Locked
 #$ INCLUDE: presets/4.3/rc_link/tbs/crossfire_150hz.txt
 #$ OPTION END
 #$ OPTION BEGIN (UNCHECKED): FrSky SBUS
@@ -207,8 +219,3 @@ set gps_set_home_point_once = ON
 #$ INCLUDE: presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt
 #$ OPTION END
 #$ OPTION_GROUP END
-
-#$ OPTION BEGIN (UNCHECKED): Test Include Options
-#$ INCLUDE: presets/4.3/other/test_include.txt
-#$ OPTION END
-
