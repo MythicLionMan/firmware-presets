@@ -90,11 +90,7 @@ set blackbox_p_ratio = 64
 # On all
 set dshot_bidir = ON
 set use_unsynced_pwm = OFF
-# Clyde DSHOT600, Blinky DSHOT300, Inky -
 set motor_pwm_protocol = DSHOT600
-# Clyde, Blinky = 480, Inky = -
-# I have no idea why this is set to this value :-(
-set motor_pwm_rate = 480
 #$ OPTION END
 
 # This will enable the GPS feature, as well as being passed to the flight controller
@@ -112,7 +108,8 @@ set gps_rescue_min_start_dist = 15
 # failsafe is being configured as well as GPS.
 
 # If I'm in a situation where I feel I need GPS rescue I'll make sure I have a fix before taking off
-set gps_rescue_allow_arming_without_fix = ON
+# (I thought about this some more, and if I'm in that situation I should just turn GPS rescue off)
+set gps_rescue_allow_arming_without_fix = OFF
 # Disable the sanity checks when GPS is activated by a switch, since
 # presumably the pilot knows what they want (this is now the default value, so I'm commenting it out)
 #set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
