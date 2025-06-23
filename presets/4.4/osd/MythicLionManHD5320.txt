@@ -1,0 +1,56 @@
+#$ TITLE: MythicLionMan HD OSD
+#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: OSD
+#$ STATUS: COMMUNITY
+#$ KEYWORDS: personal, DJI, GPS
+#$ AUTHOR: MythicLionMan
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: General DJI **with GPS** OSD setup for O4 canvas mode (53x20). Make sure to have Custom OSD enabled in your DJI Goggles for Betaflight elements to display.
+#$ DESCRIPTION:
+#$ DESCRIPTION: OSD Elements Include:
+#$ DESCRIPTION: -----------
+#$ DESCRIPTION: Vbat, mAh drawn, Armed Time, RSSI
+#$ DESCRIPTION: Craft Name, Disarmed, Flight Mode, Warnings
+#$ DESCRIPTION: GPS Sats, GPS Speed, Altitude, Home Direction, Home Distance
+#$ INCLUDE: presets/4.4/osd/defaults.txt
+
+#TODO Perhaps I should change the LQ/RSSI DISPLAY when Radio Protocol == ELRS (or just always do it the new way)
+set osd_warn_bitmask = 8191
+set osd_cap_alarm = 1500
+set osd_tim1 = 1025
+set osd_rssi_pos = 1492
+set osd_link_quality_pos = 3599
+set osd_rssi_dbm_pos = 3568
+set osd_tim_1_pos = 3695
+set osd_remaining_time_estimate_pos = 344
+set osd_flymode_pos = 3089
+set osd_vtx_channel_pos = 65
+set osd_crosshairs_pos = 4441
+set osd_ah_sbar_pos = 238
+set osd_ah_pos = 110
+set osd_mah_drawn_pos = 3632
+set osd_craft_name_pos = 2080
+set osd_pilot_name_pos = 2048
+set osd_gps_speed_pos = 3120
+set osd_gps_sats_pos = 3217
+set osd_home_dir_pos = 2074
+set osd_home_dist_pos = 3183
+set osd_altitude_pos = 3150
+set osd_warnings_pos = 2390
+set osd_avg_cell_voltage_pos = 3535
+set osd_pit_ang_pos = 4375
+set osd_rol_ang_pos = 4407
+set osd_battery_usage_pos = 3682
+set osd_disarmed_pos = 2423
+set osd_flip_arrow_pos = 2422
+set osd_camera_frame_pos = 1184
+set osd_stat_bitmask = 429628
+set osd_canvas_width=53
+set osd_canvas_height=20
+
+# Enable displayport over MSP
+set osd_displayport_device = MSP
+

@@ -47,7 +47,7 @@ set min_throttle = 1070
 #$ OPTION BEGIN (CHECKED): ELRS
     set serialrx_provider = CRSF
         
-    # Crossfire doesn't have a 'cell voltage' option. Since I always monitor per cell
+    # ELRS doesn't have a 'cell voltage' option. Since I always monitor per cell
     # change the total voltage to cell voltage. If crossfire ever updates their
     # telemetry, I can remove this and update my OpenTX setup to report the correct
     # values.
@@ -108,8 +108,9 @@ set gps_rescue_min_start_dist = 15
 # failsafe is being configured as well as GPS.
 
 # If I'm in a situation where I feel I need GPS rescue I'll make sure I have a fix before taking off
-# (I thought about this some more, and if I'm in that situation I should just turn GPS rescue off)
-set gps_rescue_allow_arming_without_fix = OFF
+# This option needs to be set on, because it is activated even when GPS failsafe is disabled, so with
+# it off I need a satellite fix to arm even if GPS failsafe is disabled.
+set gps_rescue_allow_arming_without_fix = ON
 # Disable the sanity checks when GPS is activated by a switch, since
 # presumably the pilot knows what they want (this is now the default value, so I'm commenting it out)
 #set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
@@ -120,7 +121,12 @@ set gps_set_home_point_once = ON
 #$ OPTION END
 
 #$ OPTION_GROUP BEGIN: OSD Setup
-#$ OPTION BEGIN (CHECKED): HD OSD MSP
+#$ OPTION BEGIN (CHECKED): HD OSD V3
+# This option is also detected by the flight controller setup script to setup the
+# OSD serial options
+#$ INCLUDE: presets/4.4/osd/MythicLionManHD5320.txt
+#$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): HD OSD MSP
 # This option is also detected by the flight controller setup script to setup the
 # OSD serial options
 #$ INCLUDE: presets/4.4/osd/MythicLionManHD.txt
