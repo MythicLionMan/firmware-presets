@@ -950,7 +950,7 @@
     },
     {
       "fullPath": "presets/4.3/modes/MythicLionMan.txt",
-      "hash": "11208bd35392921e8045a2c0558dcb52ffb3716e9886658a526678667957a3d0",
+      "hash": "5ecf5ecdc1d7b044ed822d58fe32ea4e8757ac5517d9daeec24c285570ee3bcb",
       "title": "Default 4.3 Modes and Adjustment settings",
       "firmware_version": [
         "4.3",
@@ -4254,7 +4254,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/MythicLionMan_SpeedyBee_F4_Serial.txt",
-      "hash": "7644e1f8d29cf86dc191b8d56c08db6e89a8b0769ea5788a5f91b01d0dde6a38",
+      "hash": "8c22988a38c82c975a214b3b9e33aec81f276787a784f7edd3df297e18825aa2",
       "title": "MythicLionMan SpeedyBee F4 Serial",
       "firmware_version": [
         "4.4",
@@ -4270,7 +4270,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/MythicLionMan_SpeedyBee_F7_Serial.txt",
-      "hash": "48b563ad7ae02649606193ce70be5e76e5a59a6d914698b790e29f8f5913c6f3",
+      "hash": "0ffefdf52397d8b43d37c1f9e4344039f993ed9d9c0eef4fd7c23a2b8b1324e4",
       "title": "MythicLionMan SpeedyBee F7 Serial",
       "firmware_version": [
         "4.4",
@@ -4563,6 +4563,24 @@
     {
       "fullPath": "presets/4.4/osd/MythicLionManHD.txt",
       "hash": "c0228eecfd6a4f0ad99e3d56930052da8ec5b0563da08bf5a163be6c34ceb928",
+      "title": "MythicLionMan HD OSD",
+      "firmware_version": [
+        "4.4",
+        "4.5"
+      ],
+      "category": "OSD",
+      "status": "COMMUNITY",
+      "keywords": [
+        "personal",
+        "DJI",
+        "GPS"
+      ],
+      "author": "MythicLionMan",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/MythicLionManHD5320.txt",
+      "hash": "fc4e71188b7501152f7a2c9ac49e02dea56b24b8270567023d62ddc0e896e2ac",
       "title": "MythicLionMan HD OSD",
       "firmware_version": [
         "4.4",
@@ -6791,7 +6809,7 @@
     },
     {
       "fullPath": "presets/4.5/other/MythicLionMan_5in_setup.txt",
-      "hash": "4c97dbb01d848c724323480d421d53ffa363200aebda7e833612d5b6e1ab4563",
+      "hash": "61d92d09a47b3ea3f217fe6275a1aefb49d437bb4e99fcb2f8b4ac36248abf86",
       "title": "MythicLionMan Setup 5in",
       "firmware_version": [
         "4.5"
